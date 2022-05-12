@@ -51,6 +51,8 @@ def home_view(request):
                                 & (dataframe['col2'] < endt1)]
             print("check this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             print(filtered_df)
+            if filtered_df.empty:
+                print('either date range or employee number is invalid!!!!!!!!!!')
             finalfiltereddata = filtered_df.iloc[np.where(filtered_df['col1'] == temp)]
             print(finalfiltereddata)
             print("Till here everything is corect!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
