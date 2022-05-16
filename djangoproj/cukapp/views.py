@@ -8,6 +8,7 @@ from dateutil import parser
 import pandas as pd
 import numpy as np
 from .forms import GeeksForm
+import requests
 from django.http import HttpResponse
 # Create your views here.
 #def home(request):
